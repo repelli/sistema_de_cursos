@@ -1,0 +1,24 @@
+@model SISTEMA_DE_CURSOS_MVC.Models.Curso
+
+<h2>Cadastrar Curso</h2>
+
+<form asp-action="Criar"> <!--chama a action criar -->
+
+    <label> Nome: </label>
+    <input type="text" name="nomeConstrutor" class="form-control"> <!-- tem que ser igual ao controler -->
+
+    <label>Horas: </label>
+    <input type="number" name="horasConstrutor" class="form-control">
+
+
+    <label> Tipo de Curso: </label>
+    <select name="tipoCursoConstrutor" class="form-control">
+        <option value="Tecnico">Técnico</option>
+        <option value="Superior">Superior</option>
+    </select>
+
+    <button type="submit" class="btn btn-sucess">Salvar</button>
+
+</form>
+
+<!-- class esta puxando o bootstrap que já tem classes prontas -->
